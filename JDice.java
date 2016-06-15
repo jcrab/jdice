@@ -34,6 +34,8 @@ public class JDice {
 	JComboBox inputBox;
 	long lastEvent; /* hack to prevent double events with text
 			   entry */
+	// this is a constructor
+	// constructor names must EXACTLY match the name of the class
 	public JDice_Listener(JList resultList,
 			     JComboBox inputBox){
 

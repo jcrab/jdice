@@ -179,6 +179,7 @@ public class DiceParser{
 	Integer num=ss.getInt();
 	int dsides;
 	int ndice;
+	// PHP has a === operator; Java does not; use ==
 	if(num===null) {
 	    ndice=1;
 	}
@@ -232,6 +233,10 @@ public class DiceParser{
 	    }
 	}
     }
+    // This is the main method for this class
+    // all methods must have a (possibly empty) parameter list.
+    // The test method above has a single String param.
+    // We are missing parens around the "args" String array param.
     public static void main String[] args {
 	test("d6");
 	test("2d6");

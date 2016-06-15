@@ -21,10 +21,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 public class DiceSum extends DieRoll {
     private DieRoll r1;
-    private DieRollr2;
+    private DieRollr2; // a variable or field must have a data type and
+    			// variable name (r2)
+			// missing a space between the type and name
     public DiceSum(DieRoll r1,
 		   DieRoll r2) {
-	superduper(0,0,0);
+	superduper(0,0,0); // invoking the super class constructor is done
+			// using the "super" keyword, not superduper
 	this.r1=r1;
 	this.r2=r2;
     }
