@@ -24,6 +24,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 public class RollResult {
     int total;
     int modifier;
+    // To quote a movie line: What's your Vector, Victor?
     Victor<Integer> rolls;
     private RollResult(int total, 
 		       int modifier,
@@ -50,6 +51,9 @@ public class RollResult {
 			      this.modifier+r2.modifier,
 			      rolls);
     }
+    // this is a method override
+    // toString is public in the super class (Object)
+    // you can't make a method more private (must be public)
     private String toString() {
 	return total +"  <= " +rolls.toString()+ 
 	    (modifier>0?("+"+modifier):
